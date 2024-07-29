@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container__title">Pomodoro Timer</h1>
+
+      <h3 class="container__title--select">Choose your timer</h3>
+      <div class="container__timers" id="timers">
+        <button class="btn container--short" id="pomodoro-short">
+          25 Minutes
+        </button>
+        <button class="btn container--medium" id="pomodoro-medium">
+          35 Minutes
+        </button>
+        <button class="btn container--long" id="pomodoro-long">
+          45 Minutes
+        </button>
+      </div>
+
+      <div class="container__countdown" id="timer-container">
+        <p class="clock">
+          <span id="minutes">25</span> : <span id="seconds">00</span>
+        </p>
+      </div>
+      <div class="container__break hidden" id="break-container">
+        <p class="clock">
+          <span id="break-minutes">5</span> : <span id="break-seconds">00</span>
+        </p>
+        <p class="break__title" id="break-paragraph">Time for a break...</p>
+      </div>
+
+      <div class="container__buttons">
+        <button class="btn container--start" id="start-timer">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="btn container--pause" id="pause-timer">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

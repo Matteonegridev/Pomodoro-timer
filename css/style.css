@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-c: rgb(20, 20, 20);
+}
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+button {
+  font-family: inherit;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-c);
+  color: #fff;
+}
+.container {
+  padding: 2rem 4rem;
+  box-shadow: 0 0 25px 5px rgba(105, 36, 255, 0.777);
+  /* background-color: #6346f2; */
+
+  .container__title {
+    text-align: center;
+  }
+
+  .container__title--select {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .container__timers {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 3rem 0;
+  }
+
+  .container__countdown {
+    text-align: center;
+    padding: 3rem;
+  }
+  .container__break {
+    text-align: center;
+    padding: 3rem;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .container__buttons {
+    width: 100%;
+    gap: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    .container--start,
+    .container--pause {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      background-color: #f0f0f0;
+      color: #282828;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px 5px rgba(105, 36, 255, 0.777);
+    }
+  }
+}
+
+.container__timers > .btn:not(:last-child) {
+  margin-right: 2rem;
+}
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  background: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  color: inherit;
+}
+.break__title {
+  opacity: 0;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.new-span {
+  opacity: 0;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  font-size: 4rem;
+  background: var(--bg-c);
+  color: #ededed;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  font-family: "Orbitron";
+}
